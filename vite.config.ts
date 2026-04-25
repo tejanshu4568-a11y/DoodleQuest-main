@@ -5,7 +5,7 @@ import { componentTagger } from "lovable-tagger";
 
 // https://vitejs.dev/config/
 export default defineConfig(({ mode }) => ({
-  base: "/DoodleQuest-main/",
+  base: mode === "production" ? "/DoodleQuest-main/" : "/",
   server: {
     host: "::",
     port: 8080,
